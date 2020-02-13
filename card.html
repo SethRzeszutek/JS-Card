@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="card.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-134613232-1');
+		</script>
+	</head>
+	<body>
+  <div class="grid-container">
+	<div id="flip" class="flip business-card" onmouseleave="returnCard(0)" onclick="flipCard(0)" data-tilt data-tilt-max="10" data-tilt-speed="10" data-tilt-perspective="500" data-tilt gyroscope="true" data-tilt-easing="cubic-bezier(.03,.98,.52,.99)" data-tilt-reset="true"
+	  data-tilt-transition="true" data-tilt-glare="true" data-tilt-max-glare="0.2" data-tilt-reverse="true">
+	  <div id="card" class="card">
+		<div id="face" class="face front shadow">
+		  <div class="details">
+			<div id="name" class="name silver-text card-engrave">
+			  Seth A. Rzeszutek
+			</div>
+			<br>
+
+			<div id="role" class="role silver-text card-engrave shine">
+			  Software Engineer
+			</div>
+
+			<div id="contact" class="contact">
+			  <i id="email" class="far fa-envelope silver-text card-engrave shine">   sethrzeszutek@gmail.com</i>
+			</div>
+
+			<!-- <div class="contact">
+								P: 012-345-6789 
+							</div> -->
+
+		  </div>
+		  <div id="avatar" class="avatar">
+			<i id="avatar-icon" class="fas fa-user fa-9x silver-text card-engrave shine"></i>
+		  </div>
+		</div>
+		<div class="face back shadow">
+		  <div class="social">
+			<table>
+			  <tr>
+				<td id="facebook" class="silver-text  card-engrave">
+				  <i class="fab fa-facebook-square fa-3x socialico"></i>
+				  <div class="sociallink"><a href="https://www.facebook.com">Facebook</a></div>
+				</td>
+				<td id="linkedin" class="silver-text  card-engrave">
+				  <i class="fab fa-linkedin fa-3x socialico"></i>
+				  <div class="sociallink"><a href="https://www.linkedin.com">Linkedin</a></div>
+				</td>
+			  </tr>
+			  <tr>
+				<td id="twitter" class="silver-text  card-engrave">
+				  <i class="fab fa-twitter-square fa-3x socialico"></i>
+				  <div class="sociallink"><a href="https://www.twitter.com">Twitter</a></div>
+				</td>
+				<td id="website" class="silver-text card-engrave">
+				  <i class="fas fa-mouse-pointer fa-3x socialico"></i>
+				  <div class="sociallink"><a href="https://www.google.com">Website</a></div>
+				</td>
+			  </tr>
+			</table>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="button-div">
+	<button id="toggle" class="button" onclick="toggle()"> Toggle </button>
+	<button id="color" class="button" onclick="changecolor()" value="0"> Color </button>
+  </div>
+</body>
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="card.js"></script>
+</html>
